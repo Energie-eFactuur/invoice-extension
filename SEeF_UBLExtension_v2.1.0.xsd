@@ -69,6 +69,8 @@
             <xsd:element ref="LatestMeterReadingMethodCode" minOccurs="0"/>
             <xsd:element ref="MeterReadingComments" minOccurs="0" maxOccurs="unbounded"/>
             <xsd:element name="FuelMix" type="FuelMixType" minOccurs="0"/>
+            <xsd:element name="MeterQuantity" type="MeterQuantityType" minOccurs="0"/>
+            <xsd:element name="CorrectedMeterQuantity" type="MeterQuantityType" minOccurs="0"/>
         </xsd:sequence>
     </xsd:complexType>
     <xsd:complexType name="LatestMeterQuantityType">
@@ -139,5 +141,10 @@
                 </xsd:complexType>
             </xsd:element>
         </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="MeterQuantityType">
+        <xsd:complexContent>
+            <xsd:extension base="udt:QuantityType"/>
+        </xsd:complexContent>
     </xsd:complexType>
 </xsd:schema>
