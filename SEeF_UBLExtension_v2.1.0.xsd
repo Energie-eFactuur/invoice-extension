@@ -67,8 +67,8 @@
             <xsd:element ref="LatestMeterQuantity" minOccurs="0"/>
             <xsd:element ref="PreviousMeterReadingMethodCode" minOccurs="0"/>
             <xsd:element ref="LatestMeterReadingMethodCode" minOccurs="0"/>
-            <xsd:element name="MeterQuantity" type="MeterQuantityType" minOccurs="0"/>
-            <xsd:element name="CorrectedMeterQuantity" type="MeterQuantityType" minOccurs="0"/>
+            <xsd:element name="ConsumptionQuantity" type="MeterQuantityType" minOccurs="0"/>
+            <xsd:element name="CorrectedConsumptionQuantity" type="MeterQuantityType" minOccurs="0"/>
             <xsd:element ref="MeterReadingComments" minOccurs="0" maxOccurs="unbounded"/>
             <xsd:element name="FuelMix" type="FuelMixType" minOccurs="0"/>
         </xsd:sequence>
