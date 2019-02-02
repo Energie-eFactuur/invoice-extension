@@ -37,11 +37,11 @@
                         <xsd:restriction base="cac:AddressType">
                             <xsd:sequence>
                                 <xsd:element ref="cbc:ID" minOccurs="0"/>
-                                <xsd:element ref="cbc:Postbox" minOccurs="0"/>
                                 <xsd:element ref="cbc:StreetName" minOccurs="0"/>
-                                <xsd:element ref="cbc:BuildingNumber" minOccurs="0"/>
+                                <xsd:element ref="cbc:AdditionalStreetName" minOccurs="0"/>
                                 <xsd:element ref="cbc:CityName" minOccurs="0"/>
                                 <xsd:element ref="cbc:PostalZone" minOccurs="0"/>
+                                <xsd:element ref="cac:AddressLine" minOccurs="0" maxOccurs="unbounded"/>
                                 <xsd:element ref="cac:Country" minOccurs="0"/>
                             </xsd:sequence>
                         </xsd:restriction>
